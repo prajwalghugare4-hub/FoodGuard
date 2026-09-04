@@ -1,22 +1,45 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🍽️ FoodGuard
 
-# Run and deploy your AI Studio app
+### Intelligent Food Surplus Prediction, Demand Forecasting, Preparation Recommendations & Rescue System
 
-This contains everything you need to run your app locally.
+FoodGuard is a native Android application designed to help institutional kitchens reduce food waste by combining **historical consumption analysis, demand/portion intelligence, surplus prediction, and verified food-rescue workflows**.
 
-View your app in AI Studio: https://ai.studio/apps/c940bae1-c086-48de-a857-e8c14d5b9cf5
+The system focuses on preventing excess food **before cooking** wherever possible and facilitating rescue of edible surplus when it cannot be avoided.
 
-## Run Locally
+---
 
-**Prerequisites:**  [Android Studio](https://developer.android.com/studio)
+## 🎯 Problem
 
+Institutional kitchens such as college messes and canteens often prepare food based on estimated demand. This can result in:
 
-1. Open Android Studio
-2. Select **Open** and choose the directory containing this project
-3. Allow Android Studio to fix any incompatibilities as it imports the project.
-4. Create a file named `.env` in the project directory and set `GEMINI_API_KEY` in that file to your Gemini API key (see `.env.example` for an example)
-5. Remove this line from the app's `build.gradle.kts` file: `signingConfig = signingConfigs.getByName("debugConfig")`
-6. Run the app on an emulator or physical device
-7. If you have already published your app in AI Studio, please [request upload key reset](https://support.google.com/googleplay/android-developer/answer/9842756#zippy=%2Crequest-an-upload-key-reset) in Google Play Console.
+- Over-preparation of meals
+- Unnecessary food and ingredient wastage
+- Difficulty estimating actual demand
+- Delayed identification of surplus food
+- Lack of a structured process for donating edible surplus
+- Connectivity problems in locations such as basement kitchens
+
+Traditional systems are largely **reactive** — they deal with food waste after meals have already been prepared.
+
+---
+
+## 💡 Our Solution
+
+FoodGuard introduces a **proactive approach**:
+
+```text
+Historical Meal Data
+        ↓
+Demand / Consumption Analysis
+        ↓
+Surplus Prediction
+        ↓
+Surplus Detected
+        ↓
+Rescue Request
+        ↓
+Nearby NGO / Rescuer
+        ↓
+Pickup PIN Verification
+        ↓
+Rescue Completed
